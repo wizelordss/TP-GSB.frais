@@ -13,8 +13,8 @@ CREATE USER 'gsb'@'localhost' IDENTIFIED BY 'gsbpass';
 GRANT ALL PRIVILEGES ON . TO 'gsb'@'localhost';
 flush privileges;
 exit
-mysql -u root -p gsb_frais < /home/serrurier/gsb_frais_structure.sql
-mysql -u root -p gsb_frais < /home/serrurier/gsb_frais_insert_tables_statiques.sql
+mysql -u root -p gsb_frais < /home/damien/gsb_frais_structure.sql
+mysql -u root -p gsb_frais < /home/damien/gsb_frais_insert_tables_statiques.sql
 wget https://raw.githubusercontent.com/wizelordss/TP-GSB.frais/main/gsb_frais_structure.sql
 wget https://raw.githubusercontent.com/wizelordss/TP-GSB.frais/main/gsb_frais_insert_tables_statiques.sql
 cd /etc/apache2/sites-available/
