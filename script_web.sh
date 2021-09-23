@@ -7,7 +7,6 @@ wget https://raw.githubusercontent.com/wizelordss/TP-GSB.frais/main/gsbfrais.con
 cd /var/www
 wget https://github.com/wizelordss/TP-GSB.frais/raw/main/gsbfrais.tar.gz
 tar -xzvf gsbfrais.tar.gz
-mysql -u root -p
 mysql -e "CREATE DATABASE gsb_frais;"
 mysql -e "CREATE USER 'gsb'@'localhost' IDENTIFIED BY 'gsbpass';"
 mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'gsb'@'localhost';"
