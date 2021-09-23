@@ -7,7 +7,7 @@ $TTL    604800
                          604800 )       ; Negative Cache TTL
 ;
 @        IN      NS        ns.
-196	IN	PTR	 ns.gsb.lan
+198	IN	PTR	 ns.gsb.lan
 
 
 
