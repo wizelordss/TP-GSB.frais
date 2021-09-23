@@ -10,4 +10,4 @@ rm named.conf.local
 wget https://raw.githubusercontent.com/wizelordss/TP-GSB.frais/main/db.gsb.lan
 wget https://raw.githubusercontent.com/wizelordss/TP-GSB.frais/main/db.gsb.lan.rev
 wget https://raw.githubusercontent.com/wizelordss/TP-GSB.frais/main/named.conf.local
-systemctl restart bind
+systemctl restart bind9
