@@ -1,5 +1,5 @@
-apt update && apt upgrade -y
-apt install apache2 libapache2-mod-php php-mysql-y
+apt update -y && apt upgrade -y
+apt install apache2 libapache2-mod-php php-mysql -y
 apt install mariadb-server -y
 mysql_secure_installation
 cd /etc/apache2/sites-available/
