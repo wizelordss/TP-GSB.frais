@@ -1,1 +1,10 @@
-
+apt update -y && apt upgrade -y
+apt install apache2 libapache2-mod-php php-mysql -y
+cd /etc/apache2/sites-available/
+wget https://raw.githubusercontent.com/wizelordss/TP-GSB.frais/main/gsbfrais.conf
+cd /var/www
+wget https://github.com/wizelordss/TP-GSB.frais/raw/main/gsbfrais.tar.gz
+tar -xzvf gsbfrais.tar.gz
+a2dissite 000-default.conf
+a2ensite gsbfrais.conf
+systemctl restart apache2
